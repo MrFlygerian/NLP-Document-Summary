@@ -66,7 +66,7 @@ checkpoint = ModelCheckpoint(filepath, monitor='loss', verbose=1, save_best_only
 callbacks_list = [checkpoint]
 
 #fit model
-model.fit(X, y, epochs=50, batch_size=64, callbacks=callbacks_list)
+model.fit(X, y, epochs=25, batch_size=64, callbacks=callbacks_list)
 
 
 
