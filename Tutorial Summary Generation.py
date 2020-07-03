@@ -1,4 +1,6 @@
-# Load LSTM network and generate text
+"""
+
+#Load LSTM network and generate text
 import sys
 import numpy
 from keras.models import Sequential
@@ -50,7 +52,7 @@ model.add(Dropout(0.2))
 model.add(Dense(y.shape[1], activation='softmax'))
 
 # load the network weights
-filename = "weights-improvement-19-2.0858.hdf5"
+#filename = "tutorial-weights-19-2.0858.hdf5"
 model.load_weights(filename)
 model.compile(loss='categorical_crossentropy', optimizer='adam')
 
@@ -72,3 +74,5 @@ for i in range(1000):
 	pattern.append(index)
 	pattern = pattern[1:len(pattern)]
 print ("\nDone.")
+
+"""

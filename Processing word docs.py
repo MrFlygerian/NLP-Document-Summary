@@ -61,12 +61,12 @@ model.add(Dense(y.shape[1], activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam')
 
 #define checkpoint
-filepath="weights-improvement-custom-{epoch:02d}-{loss:.4f}.hdf5"
+filepath="custom-weights-{epoch:02d}-{loss:.4f}.hdf5"
 checkpoint = ModelCheckpoint(filepath, monitor='loss', verbose=1, save_best_only=True, mode='min')
 callbacks_list = [checkpoint]
 
 #fit model
-model.fit(X, y, epochs=25, batch_size=64, callbacks=callbacks_list)
+model.fit(X, y, epochs=25, batch_size=60, callbacks=callbacks_list)
 
 
 

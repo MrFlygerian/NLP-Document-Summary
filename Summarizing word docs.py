@@ -1,11 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jul  2 16:08:48 2020
-
-@author: bless
-"""
 
 ################################    SCRIPT TO BE CREATED FOR SUMMARY GENERATION   ####################################specific to extracting information from word documents
+"""
 import pathlib
 from get_docx_text import get_docx_text
 
@@ -93,7 +88,6 @@ for i in range(1000):
 	pattern.append(index)
 	pattern = pattern[1:len(pattern)]
 print ("\nDone.")
-
 
 
 
