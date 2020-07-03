@@ -5,7 +5,7 @@ from keras.models import Sequential
 from keras.layers import Dense
 from keras.layers import Dropout
 from keras.layers import LSTM
-from keras.callbacks import ModelCheckpoint
+#from keras.callbacks import ModelCheckpoint
 from keras.utils import np_utils
 
 # load ascii text and covert to lowercase
@@ -50,7 +50,7 @@ model.add(Dropout(0.2))
 model.add(Dense(y.shape[1], activation='softmax'))
 
 # load the network weights
-filename = "weights-improvement-19-1.9435.hdf5"
+filename = "weights-improvement-19-2.0858.hdf5"
 model.load_weights(filename)
 model.compile(loss='categorical_crossentropy', optimizer='adam')
 
