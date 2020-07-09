@@ -61,7 +61,7 @@ model.add(Dropout(0.2))
 model.add(LSTM(256))
 model.add(Dropout(0.2))
 model.add(Dense(y.shape[1], activation='softmax'))
-model.load_weights('custom-weights-01-1.2951.hdf5')
+model.load_weights('control-starting-weight.hdf5')
 model.compile(loss='categorical_crossentropy', optimizer='adam')
 
 #define checkpoint
